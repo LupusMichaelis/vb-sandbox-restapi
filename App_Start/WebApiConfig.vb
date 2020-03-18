@@ -11,8 +11,8 @@ Public Module WebApiConfig
         config.MapHttpAttributeRoutes()
 
         config.Routes.MapHttpRoute(
-            name:="DefaultApi",
-            routeTemplate:="api/{controller}/{id}",
+            name:="VBSandboxApi",
+            routeTemplate:="{controller}/{id}",
             defaults:=New With {.id = RouteParameter.Optional}
         )
     End Sub
